@@ -464,6 +464,11 @@ a {
   align-items: baseline;
 }
 
+.address-box {
+  margin-right: 70px;
+  margin-left: 50px;
+}
+
 .address-list__item:not(:last-child) {
   margin-bottom: 9px;
 }

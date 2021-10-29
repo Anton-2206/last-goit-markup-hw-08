@@ -7,13 +7,9 @@
   display: flex;
   align-items: baseline;
 }
-// -------address-----
-// .address-box {
-//   margin-right: 70px;
-// }
-// .address {
-//   margin-right: 70px;
-// }
+.address-box {
+  margin-right: 70px;
+}
 .address-list__item:not(:last-child) {
   margin-bottom: 9px;
 }
@@ -44,7 +40,6 @@
 }
 // ----social-----
 .footer-social {
-  margin-left: 70px;
   margin-right: 93px;
 }
 .footer-social__list {
