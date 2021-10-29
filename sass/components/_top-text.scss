@@ -1,0 +1,17 @@
+.filter-about__top-text {
+  background-color: rgba(33, 150, 243, 0.9);
+  font-size: 18px;
+  line-height: 1.56;
+  color: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 63px 24px;
+  transform: translateY(100%);
+  transition: transform 250ms linear;
+  .filter-about__link:focus &,
+  .filter-about__link:hover & {
+    transform: translateY(0%);
+  }
+}
