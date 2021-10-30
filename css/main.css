@@ -466,7 +466,6 @@ a {
 
 .address-box {
   margin-right: 70px;
-  margin-left: 50px;
 }
 
 .address-list__item:not(:last-child) {
@@ -503,7 +502,6 @@ a {
 }
 
 .footer-social {
-  margin-left: 70px;
   margin-right: 93px;
 }
 
