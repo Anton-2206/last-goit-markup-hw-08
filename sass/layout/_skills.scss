@@ -1,11 +1,11 @@
 .skills {
   padding-top: 0;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
-.skills__list {
+.skills-list {
   display: flex;
-}
-.skills__title {
-  margin-bottom: 50px;
 }
 .skills__title {
   font-weight: 700;
@@ -14,17 +14,18 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-title-color);
+  margin-bottom: 50px;
 }
-.skills__item {
+.skills-list__item {
   flex-basis: calc((100% - 60px) / 3);
   &:not(:last-child) {
     margin-right: 30px;
   }
 }
-.skills__wrapper {
+.skills-list__wrapper {
   position: relative;
 }
-.skills__text {
+.skills-list__text {
   position: absolute;
   left: 0;
   bottom: 0;
