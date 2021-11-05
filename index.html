@@ -50,7 +50,7 @@
                     </svg> -->
                 </span></button>
         </div>
-        <div class="backdrop is-hidde">
+        <div class="backdrop is-hidden">
             <div class="mob-menu">
                 <div class="mob-menu__content">
                     <ul class="mob-menu__list">
@@ -164,7 +164,12 @@
                 <h2 class="team__title">Наша команда</h2>
                 <ul class="team-list">
                     <li class="team-list__item">
-                        <img class="team-list__img" src="./img-jpeg/team/igor.jpg" alt="Игорь" width="270" height="260">
+                        <img class="team-list__img" 
+                            srcset="./img-jpeg/team/igor.jpg 1x, 
+                            ./img-jpeg/team/igor-2x.jpg x2"
+                            src="./img-jpeg/team/igor.jpg" 
+                            alt="Игорь" 
+                            width="270" height="260">
                         <div class="team__box">
                             <h3 class="team-list__title">Игорь Демьяненко</h3>
                             <p class="team-list__text" lang="en">Product Designer</p>
@@ -346,7 +351,7 @@
             </div>
         </section> -->
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
         <div class="footer-container container">
             <div class="address-box">
                 <a href="./portfolio.html" class="footer__logo">
@@ -402,16 +407,16 @@
                 <p class="footer__text">Подпишитесь на рассылку</p>
                 <form action="#" class="footer-form__input">
                     <input type="email" placeholder="E-mail" class="footer-form__online">
+                </form>
                 <button type="submit" class="btn footer-btn">
                     Подписаться
                     <svg class="footer-btn-icon" width="24" height="24">
                         <use href="./img-jpeg/icon/sprite.svg#icon-send"></use>
                     </svg>
                 </button>
-                </form>
                 </div>
             </div>
-    </footer> -->
+    </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="close-btn" data-modal-close>
