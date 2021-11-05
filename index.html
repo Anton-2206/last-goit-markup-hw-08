@@ -68,6 +68,12 @@
                     11
                     11</a>
                     <a href="mailto:info@devstudio.com" class="mob-menu__email">info@devstudio.com</a>
+                    <div><ul class="mob-social">
+                        <a href="" class="mob-social__link">Instagram</a>
+                        <a href="" class="mob-social__link">Twitter</a>
+                        <a href="" class="mob-social__link">Facebook</a>
+                        <a href="" class="mob-social__link">LinkedIn</a>
+                    </ul></div>
                 </div>
                 <button class="menu__close-btn"><span>
                         <!-- <svg class="contact__icon" width="16" height="12">
@@ -166,7 +172,7 @@
                     <li class="team-list__item">
                         <img class="team-list__img" 
                             srcset="./img-jpeg/team/igor.jpg 1x, 
-                            ./img-jpeg/team/igor-2x.jpg x2"
+                            ./img-jpeg/team/igor-2x.jpg 2x"
                             src="./img-jpeg/team/igor.jpg" 
                             alt="Игорь" 
                             width="270" height="260">
@@ -206,7 +212,10 @@
                         </div>
                     </li>
                     <li class="team-list__item">
-                        <img class="team-list__img" src="./img-jpeg/team/olga.jpg" alt="Ольга" width="270" height="260">
+                        <img class="team-list__img" 
+                        srcset="./img-jpeg/team/olga.jpg 1x, 
+                            ./img-jpeg/team/olga-2x.jpg 2x"
+                        src="./img-jpeg/team/olga.jpg" alt="Ольга" width="270" height="260">
                         <div class="team__box">
                             <h3 class="team-list__title">Ольга Репина</h3>
                             <p class="team-list__text" lang="en">Frontend Developer</p>
@@ -243,7 +252,10 @@
                         </div>
                     </li>
                     <li class="team-list__item">
-                        <img class="team-list__img" src="./img-jpeg/team/nikolay.jpg" alt="Николай" width="270" height="260">
+                        <img class="team-list__img" 
+                        srcset="./img-jpeg/team/nikolay.jpg 1x, 
+                            ./img-jpeg/team/nikolay-2x.jpg 2x"
+                        src="./img-jpeg/team/nikolay.jpg" alt="Николай" width="270" height="260">
                         <div class="team__box">
                             <h3 class="team-list__title">Николай Тарасов</h3>
                             <p class="team-list__text" lang="en">Marketing</p>
@@ -280,7 +292,10 @@
                         </div>
                     </li>
                     <li class="team-list__item">
-                        <img class="team-list__img" src="./img-jpeg/team/mikhail.jpg" alt="Михаил" width="270" height="260">
+                        <img class="team-list__img" 
+                        srcset="./img-jpeg/team/mikhail.jpg 1x, 
+                            ./img-jpeg/team/mikhail-2x.jpg 2x"
+                        src="./img-jpeg/team/mikhail.jpg" alt="Михаил" width="270" height="260">
                         <div class="team__box">
                             <h3 class="team-list__title">Михаил Ермаков</h3>
                             <p class="team-list__text" lang="en">UI Designer</p>
@@ -319,7 +334,7 @@
                 </ul>
             </div>
         </section>
-        <!-- <section class="section">
+        <section class="section">
             <div class="container">
                 <h2 class="clients__title">Постоянные клиенты</h2>
                 <ul class="clients-list">
@@ -349,10 +364,11 @@
                             </svg></a></li>
                 </ul>
             </div>
-        </section> -->
+        </section>
     </main>
     <footer class="footer">
         <div class="footer-container container">
+            <div class="footer-box-tablet">
             <div class="address-box">
                 <a href="./portfolio.html" class="footer__logo">
                     <span class="footer__web">Web</span>Studio</a>
@@ -402,6 +418,7 @@
                         </a>
                     </li>
                 </ul>
+            </div>
             </div>
             <div class="footer-form">
                 <p class="footer__text">Подпишитесь на рассылку</p>
