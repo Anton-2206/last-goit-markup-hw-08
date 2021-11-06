@@ -163,6 +163,10 @@ a {
   color: var(--secondary-text-color);
 }
 
+.mob-social {
+  display: flex;
+}
+
 .mob-social__link {
   font-weight: 500;
   font-size: 18px;
