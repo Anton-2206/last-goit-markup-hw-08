@@ -19,11 +19,11 @@
 .address-box {
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-right: 165px;
+    margin-bottom: 60px;
   }
   @media screen and (min-width: 1200px) {
     margin-right: 70px;
   }
-  margin-bottom: 60px;
 }
 .address-list__item,
 .address-list__link {
