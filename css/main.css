@@ -162,12 +162,6 @@ a {
   margin-right: 50px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .site-nav__item {
-    margin-right: 84px;
-  }
-}
-
 .site-nav__link {
   display: block;
   padding: 32px 0;
@@ -182,9 +176,7 @@ a {
 }
 
 .contact {
-  display: flex;
   margin-left: auto;
-  align-items: center;
 }
 
 @media screen and (max-width: 767px) {
@@ -193,15 +185,22 @@ a {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .contact {
     display: flex;
     flex-direction: column;
+    padding-top: 21px;
   }
 }
 
 .contact__item {
   display: inline-block;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contact__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
 
 .contact__item:not(:last-child) {
@@ -852,11 +851,6 @@ a {
   margin-bottom: 20px;
 }
 
-.footer-form__input {
-  min-width: 450px;
-  margin-bottom: 20px;
-}
-
 .footer-social {
   margin-bottom: 60px;
 }
@@ -930,15 +924,29 @@ a {
 .footer-form__online {
   color: #ffffff;
   display: block;
-  width: 358px;
+  width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: transparent;
-  margin-right: 12px;
   padding-left: 16px;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-form__online {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form__online {
+    width: 358px;
+    margin-right: 12px;
+  }
 }
 
 .footer-form__online::placeholder {
@@ -950,8 +958,31 @@ a {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-form__input {
-  display: flex;
+@media screen and (min-width: 768px) {
+  .footer-form__online::placeholder {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .footer-form__input {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .footer-form__input {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form__input {
+    display: flex;
+  }
 }
 
 .filter-list__btn {
