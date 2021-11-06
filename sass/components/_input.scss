@@ -11,8 +11,8 @@
   padding-left: 16px;
   margin-bottom: 20px;
   @media screen and (min-width: 768px) {
-    justify-content: center;
-    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
   }
   @media screen and (min-width: 1200px) {
     width: 358px;
@@ -31,16 +31,6 @@
     align-items: center;
   }
 }
-// .footer-form {
-//   // @media screen and (min-width: 480px) and (max-width: 767px) {
-//   //   justify-content: center;
-//   //   align-items: center;
-//   // }
-//   // @media screen and (min-width: 1200px) {
-//   //   display: flex;
-//   //   flex-direction: row;
-//   // }
-// }
 .footer-form__input {
   @media screen and (min-width: 480px) and (max-width: 767px) {
     justify-content: center;
