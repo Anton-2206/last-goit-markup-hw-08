@@ -65,6 +65,7 @@ a {
 
 .container {
   width: 100%;
+  min-width: 320px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -85,6 +86,7 @@ a {
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
+    max-width: 1600px;
   }
 }
 
@@ -216,10 +218,17 @@ a {
 .header__logo {
   font-family: Raleway;
   font-weight: 700;
-  font-size: 26px;
-  line-height: calc(31 / 26);
+  font-size: 24px;
+  line-height: 28px;
   letter-spacing: 0.03em;
   color: #000000;
+}
+
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    font-size: 26px;
+    line-height: calc(31 / 26);
+  }
 }
 
 .header__logo-web {
@@ -249,6 +258,12 @@ a {
 .site-nav__list {
   display: flex;
   align-items: center;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  .site-nav__list {
+    margin-right: 83px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -282,10 +297,6 @@ a {
   color: var(--accent-color);
 }
 
-.contact {
-  margin-left: auto;
-}
-
 @media screen and (max-width: 767px) {
   .contact {
     display: none;
@@ -296,7 +307,13 @@ a {
   .contact {
     display: flex;
     flex-direction: column;
-    padding-top: 21px;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact {
+    margin-left: auto;
   }
 }
 
@@ -305,6 +322,11 @@ a {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contact__item {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+  }
   .contact__item:not(:last-child) {
     margin-bottom: 10px;
   }
@@ -322,7 +344,6 @@ a {
 
 .contact__link {
   display: flex;
-  display: inline-block;
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
@@ -336,9 +357,13 @@ a {
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .contact__link {
+    display: flex;
     padding-top: 0;
     padding-bottom: 0;
     flex-direction: start;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(14 / 12);
   }
 }
 
@@ -351,8 +376,28 @@ a {
   margin-right: 10px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .contact__icon {
+    margin-right: 8px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .contact__icon-email {
+    width: 14px;
+    height: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .contact__icon-tel {
+    width: 10px;
+    height: 14px;
+  }
+}
+
 .header .header__logo {
-  margin-right: 93px;
+  margin-right: 88px;
 }
 
 .site-nav__link--current {
@@ -481,7 +526,6 @@ a {
 }
 
 .benefits__box {
-  width: 450px;
   height: 120px;
   left: 215px;
   top: 774px;
@@ -830,23 +874,41 @@ a {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-box-tablet {
     display: flex;
-    justify-content: space-around;
+    align-items: baseline;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-width: 1200px) {
+  .footer-box-tablet {
+    display: flex;
+    flex-direction: column;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .address-box {
     margin-right: 165px;
-    margin-bottom: 60px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .address-box {
     margin-right: 70px;
+  }
+}
+
+.address-list {
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .address-list {
+    margin-bottom: 0;
   }
 }
 
@@ -885,6 +947,12 @@ a {
 
 .footer-social {
   margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-social {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -927,7 +995,7 @@ a {
 
 .footer__logo {
   display: inline-block;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;

@@ -14,10 +14,16 @@
 .site__nav {
   display: flex;
   align-items: center;
+  // @media screen and (min-width: 1200px) {
+  //   // display: block;
+  // }
 }
 .site-nav__list {
   display: flex;
   align-items: center;
+  @media screen and (min-width: 767px) and (max-width: 1199px) {
+    margin-right: 83px;
+  }
   @media screen and (max-width: 767px) {
     display: none;
   }
@@ -49,7 +55,7 @@
 }
 .contact {
   // display: flex;
-  margin-left: auto;
+  // margin-left: auto;
   // align-items: center;
   @media screen and (max-width: 767px) {
     display: none;
@@ -57,7 +63,11 @@
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     flex-direction: column;
-    padding-top: 21px;
+    justify-content: center;
+    // padding-top: 21px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
   }
 }
 .contact__item {
@@ -66,6 +76,9 @@
     &:not(:last-child) {
       margin-bottom: 10px;
     }
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(14 / 12);
   }
 }
 .contact__item:not(:last-child) {
@@ -75,13 +88,17 @@
   }
 }
 .contact__link {
-  display: flex;
+  // display: flex;
   @media screen and (min-width: 768px) and (max-width: 1200px) {
+    display: flex;
     padding-top: 0;
     padding-bottom: 0;
     flex-direction: start;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(14 / 12);
   }
-  display: inline-block;
+  display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
@@ -99,9 +116,24 @@
 .contact__icon {
   fill: currentColor;
   margin-right: 10px;
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    margin-right: 8px;
+  }
+}
+.contact__icon-email {
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    width: 14px;
+    height: 10px;
+  }
+}
+.contact__icon-tel {
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    width: 10px;
+    height: 14px;
+  }
 }
 .header .header__logo {
-  margin-right: 93px;
+  margin-right: 88px;
 }
 
 .site-nav__link--current {
