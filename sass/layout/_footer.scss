@@ -12,31 +12,41 @@
   }
 }
 .footer-box-tablet {
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     align-items: baseline;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    // display: flex;
     justify-content: center;
     margin-bottom: 60px;
-    @media screen and (min-width: 1200px) {
-      display: flex;
-      // flex-direction: column;
-    }
   }
+  // @media screen and (min-width: 1200px) {
+  //   display: flex;
+  //   // flex-direction: column;
+  // }
 }
+
 .address-box {
+  display: block;
+  margin-bottom: 60px;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-right: 165px;
+    margin-bottom: 0;
   }
   @media screen and (min-width: 1200px) {
     margin-right: 70px;
   }
 }
-.address-list {
-  margin-bottom: 60px;
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    margin-bottom: 0;
-  }
-}
+// .address-list {
+//   // margin-bottom: 60px;
+//   // @media screen and (min-width: 768px) and (max-width: 1199px) {
+//   //   margin-bottom: 0;
+//   // }
+//   // @media screen and (min-width: 768px) {
+//   //   margin-bottom: 0;
+//   //
+// }
 .address-list__item,
 .address-list__link {
   font-style: normal;
@@ -74,7 +84,7 @@
 
 .footer-social {
   margin-bottom: 60px;
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) {
     margin-bottom: 0;
   }
   @media screen and (min-width: 1200px) {
