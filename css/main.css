@@ -1250,8 +1250,8 @@ a {
   top: 10px;
   background-color: transparent;
   border-radius: 50%;
-  width: auto;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   border: 1px solid #999999;
   display: flex;
   align-items: center;
