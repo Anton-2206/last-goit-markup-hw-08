@@ -1,10 +1,12 @@
 .benefits {
-  margin-right: -30px;
-  margin-bottom: -30px;
+  // margin-right: -30px;
+  // margin-bottom: -30px;
   @media screen and (min-width: 768px) {
     width: 768px;
     display: flex;
     flex-wrap: wrap;
+    margin-right: -30px;
+    margin-bottom: -30px;
   }
   @media screen and (min-width: 1200px) {
     width: 1200px;

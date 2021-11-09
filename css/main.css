@@ -495,16 +495,13 @@ a {
   }
 }
 
-.benefits {
-  margin-right: -30px;
-  margin-bottom: -30px;
-}
-
 @media screen and (min-width: 768px) {
   .benefits {
     width: 768px;
     display: flex;
     flex-wrap: wrap;
+    margin-right: -30px;
+    margin-bottom: -30px;
   }
 }
 
@@ -797,6 +794,12 @@ a {
   }
 }
 
+@media screen and (max-width: 479px) {
+  .clients-list__item {
+    margin-bottom: 10px;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .clients-list__item {
     justify-content: center;
@@ -1054,6 +1057,7 @@ a {
   .footer-form__online {
     width: 358px;
     margin-right: 12px;
+    margin-bottom: 0;
   }
 }
 
@@ -1131,7 +1135,7 @@ a {
   }
 }
 
-.filter-about__item:not(:last-child) {
+.filter-about__item {
   margin-bottom: 30px;
 }
 
@@ -1414,6 +1418,12 @@ a {
   .filter-list {
     margin-bottom: 30px;
     justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filter-list {
+    margin-bottom: 50px;
   }
 }
 
