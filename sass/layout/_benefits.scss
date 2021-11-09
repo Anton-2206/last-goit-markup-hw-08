@@ -1,8 +1,6 @@
 .benefits {
-  // display: flex;
-  // padding-top: 30px;
-  // padding-bottom: 30px;
-
+  margin-right: -30px;
+  margin-bottom: -30px;
   @media screen and (min-width: 768px) {
     width: 768px;
     display: flex;
@@ -26,20 +24,14 @@
   }
 }
 .benefits__box {
-  // width: 450px;
   height: 120px;
-  left: 215px;
-  top: 774px;
   background: #f5f4fa;
   border-radius: 4px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
-  padding-top: 0;
-
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    width: 354px;
     height: 120px;
   }
   @media screen and (min-width: 1200px) {

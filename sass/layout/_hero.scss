@@ -75,12 +75,7 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-title-color);
-  width: 360px;
   margin: 0 auto 30px auto;
-
-  @media screen and (min-width: 768px) {
-    width: 360px;
-  }
   @media screen and (min-width: 1200px) {
     width: 696px;
     font-weight: 900;
