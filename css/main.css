@@ -649,6 +649,12 @@ a {
   border-radius: 0px 0px 4px 4px;
 }
 
+@media screen and (max-width: 767px) {
+  .team-list__item:last-child {
+    margin-bottom: 0;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .team-list__item {
     flex-basis: calc(100% / 2 - 30px);
